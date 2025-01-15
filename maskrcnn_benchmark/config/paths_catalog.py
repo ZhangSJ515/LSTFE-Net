@@ -5,7 +5,7 @@ import os
 from copy import deepcopy
 
 class DatasetCatalog(object):
-    DATA_DIR = "datasets/FLDrones"
+    DATA_DIR = "/home/zsj/datasets/imagenet_object_detection_video_train/ILSVRC"
     DATASETS = {
         "coco_2017_train": {
             "img_dir": "coco/train2017",
@@ -167,6 +167,16 @@ class DatasetCatalog(object):
             "img_dir": "Data/VID",
             "anno_path": "Annotations/VID",
             "img_index": "ImageSets/VID_val_videos.txt"
+        },
+        "VID_train_all_videos": {
+            "img_dir": "Data/VID/train",
+            "anno_path": "Annotations/VID/train",
+            "img_index": "ImageSets/VID/train_all_2.txt"
+        },
+        "VID_val_all_videos": {
+            "img_dir": "Data/VID/val",
+            "anno_path": "Annotations/VID/val",
+            "img_index": "ImageSets/VID/val.txt"
         }
     }
 
